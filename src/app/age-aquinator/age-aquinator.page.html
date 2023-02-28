@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Adivinador Edad</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="mt-4">
+      <label for="ageText" class="form-label">Escribe tu Nombre: </label>
+      <input id="ageText" class="form-control" type="text">
+      <div class="mt-4 mb-4">
+        <button class="mt-2 float-start btn btn-warning" (click)="clearContainer()">Limpiar</button>
+        <button class="mb-4 mt-2 float-end btn btn-primary" (click)="ageAquinator()">Adivinar</button>
+      </div>
+      <div id="AgeAnswer" class="mb-5 d-flex flex-wrap">
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Adivinador Genero</ion-title>
+
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="mt-5">
+      <label for="genderText" class="form-label">Escribe tu Nombre: </label>
+      <input id="genderText" class="form-control" type="text">
+      <div class="mt-4 mb-4">
+        <button class="mt-2 float-start btn btn-warning" (click)="clearContainer()">Limpiar</button>
+        <button class="mb-4 mt-2 float-end btn btn-primary" (click)="genderAquinator()">Adivinar</button>
+      </div>
+      <div id="answer" class="mt-5">
+
+      </div>
+    </div>
+  </div>
+</ion-content>

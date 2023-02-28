@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Clima RD</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item class="mt-4">
+    <h5>Clima actual</h5>
+  </ion-item>
+
+  <ion-card *ngIf="weather">
+    <ion-card-header>{{ weather.description }}</ion-card-header>
+    <ion-card-content>{{ weather.temperature }}°C</ion-card-content>
+  </ion-card>
+</ion-content>
